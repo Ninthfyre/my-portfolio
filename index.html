@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://kit.fontawesome.com/79385c003e.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<script src="js.js"></script>
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Kenia">
+<body>
+  <div id="header">
+    <div class="conatiner">
+      <nav>
+        <!-- <img src="images//logo.png" alt="" class="logo" /> -->
+        <h1 class="logo"><span>Port</span>folio</h1>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark menu"></i>
+        </ul>
+        <i class="fa-solid fa-bars menu"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi I'am <span>Kapil</span>, from <br />Udaipur<br> The <span>City</span> of <span>Lakes</span></h1>
+      </div>
+    </div>
+  </div>
+  <!-- =========About==========> -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1>About Me</h1 class="title">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto, similique numquam sint soluta odio!
+            Odio molestias
+            aut fugit ut a, praesentium, maioresconsequatur facere tenetur nesciunt et alias?
+          </p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Web Developmet</span><br>Web App Development</li>
+              <li><span>Digital Marketing</span><br>Instagram Meta Ads </li>
+              <li><span>Python Automations</span><br> Work Flow Automations</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>Feb'22 - MaY'22</span><br>Graphic Designer Intern @1MG</li>
+              <li><span>May'22 - Aug'22</span><br> Product Engineer Intern @Razorpay</li>
+              <li><span>oct'22 - Dec'22</span><br> SDE Intern @Atlassain LLC</li>
+              <li><span>Jan'23 - April'22</span><br> Project Dev Intern @Azure Microsoft</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <!-- <li><span>2021</span><br> CBSE 12th  </li> -->
+              <li><span>2021</span><br> Cracked JEE Advanced '22</li>
+              <li><span>2021 - Present</span><br>Third Year B.Tech/M.tech Computer Science Engineering From Indian
+                Institute Technonlogy Roorkee</li>
+              <li><span>2026*</span><br>Dual Degree CSE From IITR</li>
+
+              <li><span>2022</span><br>Software Development Training From Scaler Academy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+    }
+  </script>
+  <!-- ========services==========>-->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code fa-fade"></i>
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos accusantium architecto ullam
+            ducimus ea commodi fugiat fugit neque perspiciatis?</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-connectdevelop fa-flip"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos accusantium architecto ullam
+            ducimus ea commodi fugiat fugit neque perspiciatis?</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-wand-sparkles fa-fade"></i>
+          <h2>AI Automations</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos accusantium architecto ullam
+            ducimus ea commodi fugiat fugit neque perspiciatis?</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========portfolio=======> -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam fugit qui quisquam officia. 
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam fugit qui quisquam officia. 
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Grocery App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam fugit qui quisquam officia. 
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#"  class="btn">See More</a>
+    </div>
+  </div>
+<!-- ===================contact==========> -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-regular fa-paper-plane fa-bounce"></i> Contact@example.com</p>
+        <p> <i class="fa-solid fa-mobile-screen fa-shake"></i> 985856856</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <a class="btn btn-2" href="images/UNITE.pdf" download>Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form action="" name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-2">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright <span>&copy</span> Reserved 2023 Made with <i class="fa-regular fa-heart"></i> by TechFusion.in
+</div>
+<!-- <form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzhiSARsWGPQT5eXUmRtmJrfOwQkr4AaYGc72CSCWW9ERHE1AlUxxtms3Tclc-DRAyB7g/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
